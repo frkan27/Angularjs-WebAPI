@@ -1,0 +1,33 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <script src="~/Scripts/angular.min.js"></script>
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script>
+        var app = angular.module('app', []);
+        app.controller('Controller', function ($scope, $http) {
+            $scope.isShow = false;
+            $scope.selectedConsoles = null;
+            $scope.Consoles = [];
+            $http({
+                method: 'GET',
+                url: '/Home/GetConsoles'
+            }).success(function (result) {
+                $scope.Consoles = result;
+            });
+        });
+    </script>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+    </div>
+</body>
+</html>

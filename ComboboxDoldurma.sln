@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.106
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComboboxDoldurma", "ComboboxDoldurma\ComboboxDoldurma.csproj", "{255C01A2-5701-44E5-A18C-9095C8E80676}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Combobox.MVC", "Combobox.MVC\Combobox.MVC.csproj", "{21CF474A-4EA3-4C73-8725-A72C23EF3267}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{255C01A2-5701-44E5-A18C-9095C8E80676}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{255C01A2-5701-44E5-A18C-9095C8E80676}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{255C01A2-5701-44E5-A18C-9095C8E80676}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21CF474A-4EA3-4C73-8725-A72C23EF3267}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21CF474A-4EA3-4C73-8725-A72C23EF3267}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21CF474A-4EA3-4C73-8725-A72C23EF3267}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21CF474A-4EA3-4C73-8725-A72C23EF3267}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
