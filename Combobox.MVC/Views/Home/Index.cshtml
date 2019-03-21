@@ -27,7 +27,12 @@
     <title>Index</title>
 </head>
 <body>
-    <div> 
-    </div>
+  
+            <div ng-controller="Controller">
+                <select ng-model="selectedConsoles" ng-options="item.Id as item.Name for item in Consoles" ng-change="GetGames()">
+                    <option value="">Konsole Seçiniz</option>
+                </select>
+            </div>
+   
 </body>
 </html>
