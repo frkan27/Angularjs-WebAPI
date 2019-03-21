@@ -22,17 +22,52 @@
                 $scope.Consoles = result;
             });
         });
+        $scope.GetGames = function () {
+            $scope.selectedGames = null;
+            $scope.Games = [];
+
+            $scope.isShow = false;
+
+            $http({
+                method: 'GET',
+                url: '/Home/GetGames',
+                params: { ConsoleId: $scope.selectedConsoles }
+            }).success(function (result) {
+                $scope.Games = result;
+                $scope.isShow = true;
+                });
+            $scope.GetShops = function () {
+                $scope.selectedShops = null;
+                $scope.Shops = [];
+
+                $scope.isShow = false;
+
+                $http({
+                    method: 'GET',
+                    url: '/Home/GetShops',
+                    params: { GameId: $scope.selectedGames }
+                }).success(function (result) {
+                    $scope.Shops = result;
+                    $scope.isShopShow = true;
+                });
+        }
     </script>
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
 </head>
 <body>
   
-            <div ng-controller="Controller">
-                <select ng-model="selectedConsoles" ng-options="item.Id as item.Name for item in Consoles" ng-change="GetGames()">
-                    <option value="">Konsole Seçiniz</option>
-                </select>
-            </div>
+    <div ng-controller="Controller">
+        <select ng-model="selectedConsoles" ng-options="item.Id as item.Name for item in Consoles" ng-change="GetGames()">
+            <option value="">Konsole Seçiniz</option>
+        </select>
+        <select ng-model="selectedGames" ng-options="item.Id as item.Name for item in Games" ng-show="isShow" ng-change="GetShops()">
+            <option value="">Oyun</option>
+        </select>
+        <select ng-model="selectedShops" ng-options="item.Id as item.Name for item in Shops" ng-show="isShopShow">
+            <option value="">Dükkan Seçiniz</option>
+        </select>
+    </div>
    
 </body>
 </html>
