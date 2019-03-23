@@ -1,0 +1,32 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <script src="~/Scripts/angular.min.js"></script>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+          <br />
+    <div ng-app="">
+        <p>
+            isminiz =>::
+            <input type="text" ng-model="Name" />
+            
+        </p>
+        <p ng-bind="Name"></p>
+        <p>
+            Soyad=>::
+            <input type="text" ng-model="SurName" />
+        </p>
+        <p>{{SurName}}</p>
+    </div>
+        </form>
+</body>
+</html>

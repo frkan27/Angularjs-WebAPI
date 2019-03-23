@@ -7,6 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComboboxDoldurma", "Combobo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Combobox.MVC", "Combobox.MVC\Combobox.MVC.csproj", "{21CF474A-4EA3-4C73-8725-A72C23EF3267}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Combobox", "Combobox", "{1FC3B3DA-AE65-43B9-8A9C-9AE4A2A3CF12}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Angularjs", "Angularjs", "{45567124-1A4C-4D92-A209-44BD259EC80E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Angular", "Angular\Angular.csproj", "{E8109588-1D91-47DC-8DE0-F3029E7B6560}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,9 +27,18 @@ Global
 		{21CF474A-4EA3-4C73-8725-A72C23EF3267}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21CF474A-4EA3-4C73-8725-A72C23EF3267}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21CF474A-4EA3-4C73-8725-A72C23EF3267}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8109588-1D91-47DC-8DE0-F3029E7B6560}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8109588-1D91-47DC-8DE0-F3029E7B6560}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8109588-1D91-47DC-8DE0-F3029E7B6560}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8109588-1D91-47DC-8DE0-F3029E7B6560}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{255C01A2-5701-44E5-A18C-9095C8E80676} = {1FC3B3DA-AE65-43B9-8A9C-9AE4A2A3CF12}
+		{21CF474A-4EA3-4C73-8725-A72C23EF3267} = {1FC3B3DA-AE65-43B9-8A9C-9AE4A2A3CF12}
+		{E8109588-1D91-47DC-8DE0-F3029E7B6560} = {45567124-1A4C-4D92-A209-44BD259EC80E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {51E3681F-2031-4C35-9040-E90ECFDC3A90}
