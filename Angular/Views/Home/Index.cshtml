@@ -38,6 +38,19 @@
             <p ng-init="person={Name:'Furkan',Age:25}">
                 <b>Kişi Tanımı:</b> {{ person.Name + " - " + person.Age}}
             </p>
+
+            <p>
+                Ürün Adedi:<input type="number" ng-model="product" />
+                <br />
+                Ürün Fİyatı:<input type="number" ng-model="cost" />TL
+                <br />
+                Toplam Fiyat:{{product * cost}}TL
+            </p>@*ng-repeat ile foreach işlemini yapabiliriz*@
+            <p ng-init="Friends=['Furkan','Kürsad','FAtih']">
+                <ul>
+                    <li ng-repeat="x in Friends">{{x}}</li>
+                </ul>
+            </p>
         </div>
 
     </form>

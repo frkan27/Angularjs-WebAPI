@@ -19,7 +19,13 @@
             $scope.Name = "Furkan Kılıç";
             $scope.Email = "fklc61@gmail.com";
             $scope.Address = "Istnabul";
-
+            $scope.PerInfo = function () {
+                return $scope.Name + "" + $scope.Email + "" + $scope.Address;
+            }
+            @*AngularJS’de Controller’da Method Kullanımı:
+                AngularJs’de Controller kullanılacak model, parametre, değişken gibi yapıların tanımlandığı alandır.
+                Yukarda“myCtrl” içinde PerInfo() function’ı tanımlanmıştır. 
+                Bu function ile ilgili kişinin detay bilgileri alınmakta ve ekrana basılmaktadır.*@
         });
     </script>
 </head>
@@ -34,6 +40,7 @@
             Address==>:<input type="text" ng-model="Address" />
             <br />
             <b>Müşteri Bilgileri :</b> {{Name +""+Email+""+Address}}
+            <b>Hakkımda :</b>{{PerInfo()}}
         </div>
     </form>
 </body>
