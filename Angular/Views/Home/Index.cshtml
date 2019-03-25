@@ -2,7 +2,10 @@
 @{
     Layout = null;
 }
-
+@*   Burada “ng-app” AngularJS framework’ünün çalışacağı alanı belirtir.
+    “ng-model” directive’i input alana “Name” property’sini bağlar.
+    “ng-bind” directive’i “<p>” elementinin innerHTML’ine “Name” değişkenini basar.
+    “{{SurName}}”operationı da aynı “ng-bind” gibi ilgili “<p>” elementine “SurName” değişkenini basar.*@
 <!DOCTYPE html>
 
 <html>
@@ -13,20 +16,32 @@
 </head>
 <body>
     <form id="form1" runat="server">
-          <br />
-    <div ng-app="">
-        <p>
-            isminiz =>::
-            <input type="text" ng-model="Name" />
-            
-        </p>
-        <p ng-bind="Name"></p>
-        <p>
-            Soyad=>::
-            <input type="text" ng-model="SurName" />
-        </p>
-        <p>{{SurName}}</p>
-    </div>
-        </form>
+        <br />@*ng-init ile sayıları kulanabiliriz işlemleri {{}} içinde yaparız.*@
+        <div ng-app="" ng-init="ProductCount=5;Cost=20 ">
+            <p>
+                isminiz =>::
+                <input type="text" ng-model="Name" />
+
+            </p>
+            <p ng-bind="Name"></p>
+            <p>
+                Soyad=>::
+                <input type="text" ng-model="SurName" />
+            </p>
+            <p>{{SurName}}</p>
+
+            <p>
+                <b>Toplam Fatura :</b>{{ProductCount * Cost}} TL
+            </p>
+
+     
+            <p ng-init="person={Name:'Furkan',Age:25}">
+                <b>Kişi Tanımı:</b> {{ person.Name + " - " + person.Age}}
+            </p>
+        </div>
+
+    </form>
+
+
 </body>
 </html>

@@ -13,5 +13,9 @@ namespace Angular.Controllers
         {
             return View();
         }
+        public ActionResult Ctrl()
+        {
+            return View();
+        }
     }
 }
