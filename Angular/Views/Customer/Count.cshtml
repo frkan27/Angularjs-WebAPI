@@ -1,0 +1,25 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <script src="~/Scripts/angular.min.js"></script>
+    <meta name="viewport" content="width=device-width" />
+    <title>Count</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div ng-app="" ng-init="isCount=0">
+            <p ng-show="isCount>4">Bu yazı 4 ten büyük olunca gözükür</p>
+            <p>
+                Adet:<input type="number" ng-model="isCount" />
+            </p>
+        </div>
+    </form>
+   
+</body>
+</html>

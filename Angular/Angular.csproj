@@ -885,6 +885,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Ctrl.cshtml" />
     <Content Include="Views\Customer\Index.cshtml" />
+    <Content Include="Views\Customer\Count.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
